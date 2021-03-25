@@ -64,6 +64,16 @@
     cursor: pointer;
 }
 
+.navRight ul img:hover{
+    background-color: white;
+    height: 150px;
+    width: 180px;
+    border: 1px solid #333;
+    margin-bottom: 50px;
+    position: absolute;
+    top: 100px;
+}
+
 .navRight ul button{
     background-color: #1b85ea;
     border-color: #1b85ea;
