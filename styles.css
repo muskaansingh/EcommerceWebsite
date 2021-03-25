@@ -1,0 +1,59 @@
+.bgimage {
+    background-image: url("https://mobirise.com/extensions/shopamp/assets/images/freestocks-org-187367-unsplash-2000x1333.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 120vh;
+    padding-bottom: 3rem;
+    opacity: 0.5;
+}
+
+.navbar{
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 80px;
+    transition: all .3s;
+    background-color: rgba(255,255,255,0.5);
+    position: fixed;
+}
+
+.navLeft {
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+}
+
+.navLeft img {
+    width: 115px;
+}
+
+.navRight {
+    display: flex;
+    width: 60%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navRight ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px;
+}
+
+.navRight ul a {
+    padding: 30px;
+    font-weight: 500;
+}
+
+.navRight ul button{
+    background-color: #1b85ea;
+    border-color: #1b85ea;
+    color: #ffffff;
+    border-radius: 100px;
+    text-align: center;
+    padding: 14px 30px;
+}
