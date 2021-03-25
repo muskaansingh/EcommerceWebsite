@@ -57,3 +57,21 @@
     text-align: center;
     padding: 14px 30px;
 }
+
+.title {
+    height: 80%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 1rem 5rem 5rem;
+    z-index: 1;
+}
+.title h2 {
+    font-size: 60px;
+    color: black;
+}
+
+.title h5 {
+    color: #1b85ea;
+    font-weight: 500;
+}
