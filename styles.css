@@ -1,11 +1,28 @@
+body {
+    margin: 0;
+}
+img {
+    width: auto;
+    max-width: 100%;
+}
+* {
+    box-sizing: border-box;
+
+}
 .bgimage {
-    background-image: url("https://mobirise.com/extensions/shopamp/assets/images/freestocks-org-187367-unsplash-2000x1333.jpg");
+    background-image:url("./images/freestocks-org-187367-unsplash-2000x1333.jpg");
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
     padding-bottom: 3rem;
     background-color: #fff;
     position: relative;
+}
+.menu-btn {
+    margin-left: auto;
+}
+.menu-btn img {
+    max-width: 30px;
 }
 
 .overlay{
@@ -18,34 +35,44 @@
     left: 0;
     z-index: 0;
 }
-
-.navbar{
+.navRight ul a {
+    padding: 30px;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+nav {
     z-index: 1111;
-    display: flex;
-    flex-direction: row;
     width: 100%;
     min-height: 80px;
     transition: all .3s;
     background-color: rgba(255,255,255,0.5);
     position: fixed;
+    top: 0;
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    max-height: 1170px;
+    margin: auto;
+    padding: 0 30px;
 }
 
 .navLeft {
-    display: flex;
-    width: 40%;
-    justify-content: center;
-    align-items: center;
+    flex-basis: 200px;
+    max-width: 200px;
+    padding: 8px 0;
 }
 
 .navLeft img {
     width: 100px;
 }
-
 .navRight {
     display: flex;
-    width: 60%;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: center;
+    flex: 1;
 }
 
 .navRight ul {
@@ -53,11 +80,11 @@
     list-style: none;
     justify-content: flex-start;
     align-items: center;
-    margin: 20px;
+    /* margin: 20px; */
 }
 
 .navRight ul a {
-    padding: 30px;
+    padding: 30px 20px;
     font-weight: 500;
     text-decoration: none;
     color: black;
@@ -87,19 +114,20 @@
 .navRight img {
     height: 8px;
     width: 15px;
-    position: absolute;
-    bottom: 51px;
-    margin-left: 7px
+    /* position: absolute; */
+    /* bottom: 51px; */
+    margin-left: 7px;
 }
 
 .title {
-    height: 80%;
+    /* height: 80%; */
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
     padding: 1rem 5rem 5rem;
     z-index: 1;
     position: relative;
+    top: 105px;
 }
 .title h2 {
     font-size: 60px;
@@ -109,19 +137,18 @@
 .title h5 {
     color: #1b85ea;
     font-weight: 500;
+    font-size: 20px;
+    margin-top: -40px;
 }
 
 
 .container {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding: 0 5rem;
     background-color: #ffffff;
-    width: 1140px;
-    padding-right: 1rem;
-    padding-left: 1rem;
+    max-width: 1140px;
+    padding: 0 1rem;
     width: 100%;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0 auto;
 }
 
 .container h1 {
@@ -141,17 +168,13 @@
     margin-top: 70px;
 }
 
-.aboutContent img {
-    width: 347.95px;
-    height: 231.97px;
-}
+
 
 .imgcontent {
     width: 100%;
-    padding: 1.875rem;
+    /* padding: 1.875rem; */
     background: #ffffff;
 }
-
 .img h4{
     color: #999999;
     text-align: left;
@@ -187,4 +210,77 @@
     text-decoration: none;
     cursor: pointer;
     font-weight: 600;
+}
+.aboutContent {
+    display: flex;
+    flex-direction: row;
+    margin-top: 70px;
+}
+.img {
+    flex: 1;
+    width: 33%;
+    padding: 0 22px;
+}
+@media only screen and (min-width: 768px) {
+    .menu-btn {
+        display: none;
+    }
+}
+@media only screen and (max-width: 1200px) {
+.navRight ul a {
+    padding: 30px 15px;
+}
+}
+/* @media only screen and (max-width: 905px) {
+    .navRight ul {
+       margin-top: 20px;
+       margin-right: 20px;
+       margin-left: 15px;
+    }
+
+    .navRight ul button{
+        padding: 14px 30px;
+        margin-left: 30px;
+    }
+} */
+
+@media only screen and (max-width: 767px) {
+    .img {
+        flex: auto;
+        width: 100%;
+    }
+    .aboutContent {
+        flex-direction: column;
+    }
+    .navRight {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        background: #fff;
+        width: 100%;
+    }
+    .main.navRight {
+        display: block;
+        
+    }
+    .title {
+        height: 100%;
+        padding: 2rem 1rem 5rem;
+    }
+    .bgimage {
+        background-size: cover;
+    }
+    .bgimage {
+        padding-bottom: 1rem;
+    }
+    .main.navRight ul {
+        flex-direction: column;
+         padding: 0;
+        justify-content: flex-start;
+     }
+    .main.navRight li {
+        width: 100%;
+        padding: 10px;
+    }
 }
