@@ -334,3 +334,39 @@ nav {
     width: 170px;
     text-decoration: none;
 }
+
+@media only screen and (max-width:768px) {
+    .discount .overlay{
+        margin: 30px;
+    }
+    .discount .overlay h2 {
+        font-size: 10px;
+    }
+    .discount .overlay h1 {
+        font-size: 2rem;
+    }
+    .discount .overlay a {
+        padding: 10px 20px;
+        font-size: 12px;
+        font-weight: 500;
+        width: 100px;
+    }    
+}
+
+@media only screen and (max-width:583px){
+    .discount .overlay{
+        margin: 10px;
+    }
+    .discount .overlay h2 {
+        font-size: 7px;
+    }
+    .discount .overlay h1 {
+        font-size: 1rem;
+    }
+    .discount .overlay a {
+        padding: 7px 15px;
+        font-size: 10px;
+        font-weight: 500;
+        width: 80px;
+    }  
+}
