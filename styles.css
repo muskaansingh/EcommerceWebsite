@@ -344,6 +344,15 @@ nav {
     font-size: 18px;
 }
 
+.product h2 {
+    color: #1b85ea;
+    text-align: center;
+    padding-bottom: 5rem;
+    font-family: 'Poppins',sans-serif;
+    font-size: 52px;
+    letter-spacing: 1px;
+}
+
 
 @media only screen and (min-width: 768px) {
     .menu-btn {
