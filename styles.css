@@ -284,3 +284,30 @@ nav {
         padding: 10px;
     }
 }
+
+.discount {
+    background-image: url("./images//daniel-von-appen-482680-unsplash-2000x1500.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+.discount .overlay{
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
+    left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.discount .overlay h2 {
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    padding-bottom: 1.25rem;
+    color: #4d4a4a;
+    line-height: 1.4;
+}
