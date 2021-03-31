@@ -432,4 +432,16 @@ nav {
         bottom: 15px;
         left: 15px;
     }  
+    .block {
+        width: 100%;
+        margin: 20px;
+    }
+    .StoreContainerLeft{
+        flex-basis: 50%;
+        margin-left: 80px;
+    }
+    .StoreContainerRight{
+        flex-basis: 50%;
+        margin-left: 80px;
+    }
 }
