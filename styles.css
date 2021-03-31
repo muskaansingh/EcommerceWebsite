@@ -221,6 +221,97 @@ nav {
     width: 33%;
     padding: 0 22px;
 }
+
+
+.discount {
+    background-image: url("./images//daniel-von-appen-482680-unsplash-2000x1500.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+.discount .overlay{
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
+    left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.discount .overlay h2 {
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #4d4a4a;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.discount .overlay h1 {
+    font-family: 'Poppins',sans-serif;
+    font-size: 3.25rem;
+    line-height: 1;
+    letter-spacing: 1px;
+    color: #0f78da;
+    margin: 30px 0 20px;
+}
+
+.discount .overlay a {
+    background-color: #1b85ea;
+    border-color: #1b85ea;
+    color: #ffffff;
+    border-radius: 100px;
+    padding: 14px 30px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.4;
+    width: 170px;
+    text-decoration: none;
+}
+
+.StoreContainer {
+    background-color: #f1f1f7;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
+
+.StoreContainerRight{
+    flex-basis: 60%;
+    margin: 50px;
+}
+
+.StoreContainerLeft{
+    flex-basis: 40%;
+    margin-left: 200px;
+    margin-top: 80px;
+}
+
+
+.StoreContainerLeft span{
+    color: #999999;
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+.StoreContainerLeft h3 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    letter-spacing: 1.3px;
+    color: #1b85ea; 
+    font-weight: 300;
+}
+
+
 @media only screen and (min-width: 768px) {
     .menu-btn {
         display: none;
@@ -285,56 +376,6 @@ nav {
     }
 }
 
-.discount {
-    background-image: url("./images//daniel-von-appen-482680-unsplash-2000x1500.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    position: relative;
-}
-.discount .overlay{
-    top: 30px;
-    right: 30px;
-    bottom: 30px;
-    left: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.discount .overlay h2 {
-    font-size: 16px;
-    font-weight: 800;
-    letter-spacing: 2px;
-    color: #4d4a4a;
-    line-height: 1.4;
-    margin: 0;
-}
-
-.discount .overlay h1 {
-    font-family: 'Poppins',sans-serif;
-    font-size: 3.25rem;
-    line-height: 1;
-    letter-spacing: 1px;
-    color: #0f78da;
-    margin: 30px 0 20px;
-}
-
-.discount .overlay a {
-    background-color: #1b85ea;
-    border-color: #1b85ea;
-    color: #ffffff;
-    border-radius: 100px;
-    padding: 14px 30px;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 1.4;
-    width: 170px;
-    text-decoration: none;
-}
-
 @media only screen and (max-width:768px) {
     .discount .overlay{
         margin: 30px;
@@ -344,29 +385,18 @@ nav {
     }
     .discount .overlay h1 {
         font-size: 2rem;
+        text-align: center;
     }
     .discount .overlay a {
         padding: 10px 20px;
         font-size: 12px;
         font-weight: 500;
         width: 100px;
-    }    
-}
-
-@media only screen and (max-width:583px){
+    }  
     .discount .overlay{
-        margin: 10px;
-    }
-    .discount .overlay h2 {
-        font-size: 7px;
-    }
-    .discount .overlay h1 {
-        font-size: 1rem;
-    }
-    .discount .overlay a {
-        padding: 7px 15px;
-        font-size: 10px;
-        font-weight: 500;
-        width: 80px;
+        top: 15px;
+        right: 15px;
+        bottom: 15px;
+        left: 15px;
     }  
 }
